@@ -1,3 +1,81 @@
+/* Ensure the HTML and body elements fill the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox; /* IE10 */
+display: -webkit-flex; /* Safari */
+display: flex; /* Standard */
+}
+
+/* Make the main container fill the screen */
+.div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1; /* Takes up remaining space */
+
+}
+
+/* Ensure the content area grows to fill available space */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensures full height */
+}
+
+/* Adjust the layout for the inner content */
+.container1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex properties for the main sections */
+.div1, .div2, .div11 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div8 {
+    flex: 1;
+    overflow: auto; /* Ensure content can scroll if needed */
+}
+
+/* Adjust pagination and other elements to fit properly */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accessbar- {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8; /* Adjust color as needed */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .pagination {
+        flex-direction: column;
+    }
+
+    .accessbar- {
+        flex-direction: column;
+    }
+}
+
+/* Ensure images and icons fit well */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Additional styles as needed */
+
 .analysis {
     position: relative;
 }
@@ -822,21 +900,3 @@
     font-family: 'Noto Sans';
 }
 
-
-
-.icon-directionlineleft {
-    width: 100%;
-    position: relative;
-    height: 16px;
-    overflow: hidden;
-    flex-shrink: 0;
-    opacity: 0.6;
-    }
-    
-
-    div#root {
-        min-height: 0;
-        min-height: auto;
-        min-width: 0;
-        min-width: auto
-    }
