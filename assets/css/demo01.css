@@ -1,0 +1,832 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+
+
+.analysis {
+    position: relative;
+}
+.div1 {
+    align-self: stretch;
+    background-color: #383838;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 10px 16px 24px;
+}
+.divider {
+    align-self: stretch;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 1px;
+}
+.div4 {
+    border-radius: 3px;
+    background-color: #0277fe;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+    box-sizing: border-box;
+    min-height: 40px;
+}
+.divider1 {
+    width: 1px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 40px;
+}
+.icon-search {
+    width: 16px;
+    position: relative;
+    height: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+.textbox {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.icon-search-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+.id {
+    width: 300px;
+    border-radius: 2px;
+    background-color: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    height: 40px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 12px;
+    min-height: 40px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.multiselectioncombobox-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    color: #fff;
+}
+.label-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.div5 {
+    width: 240px;
+    border-radius: 2px;
+    background-color: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 12px;
+    gap: 8px;
+    min-height: 40px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.div6 {
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+    min-height: 40px;
+}
+.div7 {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+    min-height: 40px;
+}
+.group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.display-items-0-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+.div3 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.columnheader-wrapper {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    min-height: 28px;
+}
+.divider2 {
+    width: 1px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 16px;
+}
+.columnheader1 {
+    align-self: stretch;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.columnheader3 {
+    align-self: stretch;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.columnheader5 {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.columnheader9 {
+    align-self: stretch;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.columnheader11 {
+    align-self: stretch;
+    width: 140px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.columnheader15 {
+    align-self: stretch;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.columnheader17 {
+    align-self: stretch;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.columnheader {
+    align-self: stretch;
+    height: 40px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.cell-child {
+    width: 8px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #27d36f;
+    height: 8px;
+}
+.cell {
+    align-self: stretch;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    min-height: 28px;
+}
+.cell1 {
+    align-self: stretch;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    min-height: 28px;
+}
+.cell3 {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    min-height: 28px;
+}
+.cell7 {
+    align-self: stretch;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    min-height: 28px;
+}
+.cell9 {
+    align-self: stretch;
+    width: 140px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    min-height: 28px;
+}
+.cell13 {
+    align-self: stretch;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    min-height: 28px;
+}
+.icon {
+    width: 16px;
+    position: relative;
+    height: 16px;
+    opacity: 0.6;
+}
+.cell15 {
+    align-self: stretch;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    gap: 12px;
+    min-height: 28px;
+}
+.row1 {
+    width: 1455px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.cell16 {
+    align-self: stretch;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 28px;
+}
+.cell17 {
+    align-self: stretch;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 28px;
+}
+.cell18 {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 28px;
+}
+.cell20 {
+    align-self: stretch;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 28px;
+}
+.cell21 {
+    align-self: stretch;
+    width: 140px;
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 28px;
+}
+.cell23 {
+    align-self: stretch;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 28px;
+}
+.cell24 {
+    align-self: stretch;
+    width: 120px;
+    min-height: 28px;
+}
+.row {
+    align-self: stretch;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 140px;
+    min-height: 28px;
+    font-size: 14px;
+    color: #fff;
+}
+.div8 {
+    align-self: stretch;
+    flex: 1;
+    border-radius: 3px;
+    background-color: #383838;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.pagination-item {
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 6px;
+    box-sizing: border-box;
+    min-width: 32px;
+    min-height: 32px;
+}
+.pagination-item1 {
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 6px;
+    box-sizing: border-box;
+    min-width: 32px;
+    min-height: 32px;
+}
+.pagination1 {
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 2px;
+    box-sizing: border-box;
+    gap: 4px;
+    z-index: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+.div10 {
+    width: 120px;
+    border-radius: 2px;
+    background-color: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 8px;
+    gap: 6px;
+    min-height: 24px;
+    z-index: 1;
+    font-size: 12px;
+}
+.frame-child {
+    width: 8px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #5a5a5a;
+    height: 8px;
+}
+.in-queue {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ellipse-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+.frame-item {
+    width: 8px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #00a3ff;
+    height: 8px;
+}
+.ellipse-group {
+    width: 87px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+.ellipse-div {
+    width: 8px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #ff453a;
+    height: 8px;
+}
+.frame-child1 {
+    width: 8px;
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid #aeaeae;
+    box-sizing: border-box;
+    height: 8px;
+}
+.frame-parent {
+    margin: 0 !important;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    z-index: 2;
+    font-size: 14px;
+}
+.pagination {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 8px;
+    font-size: 16px;
+}
+.div2 {
+    flex: 1;
+    height: 866px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 24px;
+    box-sizing: border-box;
+    gap: 16px;
+}
+.divider15 {
+    align-self: stretch;
+    width: 1px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.id1 {
+    flex: 1;
+    position: relative;
+}
+.header {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.header1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.div14 {
+    align-self: stretch;
+    position: relative;
+}
+.div13 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+.div12 {
+    align-self: stretch;
+    background-color: #383838;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px;
+    gap: 8px;
+}
+.analysis-information {
+    align-self: stretch;
+    position: relative;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.analysis-id {
+    align-self: stretch;
+    position: relative;
+    font-weight: 500;
+}
+.mismatch-ratio {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+}
+.ct-perfusion {
+    align-self: stretch;
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+}
+.analysis-information-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.cbf-volume {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.div15 {
+    align-self: stretch;
+    flex: 1;
+    background-color: #383838;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px;
+    gap: 16px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.container2 {
+    align-self: stretch;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.div11 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+.parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.container1 {
+    align-self: stretch;
+    flex: 1;
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+.container {
+    position: absolute;
+    top: 48px;
+    left: 0px;
+    width: 1920px;
+    height: 932px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.img-logocolor-icon {
+    width: 120px;
+    position: relative;
+    height: 30px;
+}
+.product-logo-child {
+    width: 105px;
+    position: relative;
+    height: 28px;
+}
+.product-logo {
+    width: 229px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.accessbar-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    min-height: 48px;
+}
+.accessbar-item2 {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    min-height: 48px;
+}
+.accessbar-item-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.frame-wrapper {
+    flex: 1;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.product-logo-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.iconbutton1 {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    opacity: 0.6;
+}
+.icon-directionfacedown2 {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+.accessbar-item6 {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    gap: 10px;
+    min-height: 48px;
+}
+.iconbutton-parent {
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+}
+.accessbar- {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    background-color: #383838;
+    width: 1920px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.div {
+    width: 100%;
+    position: relative;
+    background-color: #0a0a0a;
+    height: 980px;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Noto Sans';
+}
+

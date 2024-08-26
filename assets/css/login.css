@@ -1,0 +1,128 @@
+div#root {
+    min-height: 0;
+    min-height: auto;
+    min-width: 0;
+    min-width: auto
+}
+
+.aq-login-page {
+    background-color: var(--Base3);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.aq-login-page .aq-login-wrap {
+    display: grid;
+    grid-template-rows: minmax(10px,1fr) 471px minmax(10px,1fr) 76px;
+    height: 100%
+}
+
+.aq-login-page .aq-login-form-wrap {
+    background-color: var(--Base4);
+    margin: 0 auto;
+    text-align: center
+}
+
+.aq-login-page .aq-login-form {
+    align-items: center;
+    border: 1px solid rgba(var(--UI0RGB),var(--Opacity6));
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    height: 471px;
+    width: 456px
+}
+
+.aq-login-page .aq-login-form>div {
+    width: 360px
+}
+
+.aq-login-page .aq-login-form .aq-login-form-logo {
+    margin-bottom: 56px;
+    margin-top: 64px;
+    text-align: center
+}
+
+.aq-login-page .aq-login-form .aq-login-form-logo img {
+    height: 80px;
+    width: 124px
+}
+
+.aq-login-page .aq-login-form .aq-login-form-group {
+    height: 100%;
+    position: relative
+}
+
+.aq-login-page .aq-login-form .aq-login-form-group>form>div.aq-login-input-group {
+    margin-bottom: 16px
+}
+
+.aq-login-page .aq-login-form .aq-login-form-group>form>div.aq-login-input-group div.aq-login-validation {
+    color: var(--Red);
+    font: var(--Font-Scale-Body3);
+    margin-top: 8px;
+    text-align: left;
+    vertical-align: top;
+    width: 100%
+}
+
+.aq-login-page .aq-login-form .aq-login-form-group>form>div.aq-login-input-group div.aq-login-validation div:first-child {
+    position: absolute
+}
+
+.aq-login-page .aq-login-form .aq-login-form-group>form>div.aq-login-input-group div.aq-login-validation div:last-child {
+    padding-left: 22px
+}
+
+.aq-login-page .aq-login-form .aq-login-form-group>form>div.aq-login-button-group {
+    bottom: 0;
+    padding-bottom: 48px;
+    position: absolute;
+    width: 100%
+}
+
+.aq-login-page .aq-login-form .aq-login-form-group>form>div.aq-login-button-group button {
+    width: 100%
+}
+
+.aq-login-page .aq-login-form .aq-login-form-group>form .ns-textfield-wrap svg path {
+    fill: rgba(var(--BaseWhiteRGB),var(--Opacity3))
+}
+
+.aq-login-page .aq-login-form .aq-login-form-group>form .aq-icon-pass {
+    display: inline-block;
+    height: 100%;
+    margin-left: 1px;
+    vertical-align: top;
+    width: 100%
+}
+
+.aq-login-page .aq-login-bottom {
+    color: var(--Font-Tertiary);
+    font: var(--Font-Scale-Micro1);
+    margin-bottom: 64px;
+    text-align: center;
+    width: 100%
+}
+
+.aq-login-page .aq-login-bottom a {
+    color: inherit
+}
+
+.aq-login-page .aq-login-bottom span {
+    margin-right: 16px
+}
+
+.aq-login-page .aq-login-bottom span:last-child {
+    margin-right: 0
+}
+
+#aq-login-modal-fail .ns-modal-content span {
+    font: var(--Font-Scale-Header2)
+}
+
+/*# sourceMappingURL=25.52758447.chunk.css.map*/
+
+
