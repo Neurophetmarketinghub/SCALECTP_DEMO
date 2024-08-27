@@ -13277,3 +13277,60 @@ sup {
     padding-right: 35px!important
 }
  
+
+/* General list item styles */
+.listbox a {
+    text-decoration: none; /* Remove default underline from links */
+    color: rgba(255, 255, 255, 0.9); /* Text color */
+    display: block; /* Ensure the link takes up the full width of the parent */
+}
+
+.listbox a .list-item {
+    align-self: stretch;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    min-height: 36px;
+    background-color: rgba(0, 0, 0, 0); /* Default transparent background */
+}
+
+/* Styles for selected list item */
+.listbox a.selected .list-item {
+    width: 100%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    min-height: 36px;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Spoqa Han Sans Neo';
+    }
+
+/* Styles for hovered list item */
+.listbox a:hover .list-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for selected */
+}
+.case-11331 {
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    overflow: auto; /* Adds scrollbars when content overflows */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.case-11331 img {
+    max-width: 100%; /* Ensures the image scales down if it's too wide */
+    height: auto; /* Keeps aspect ratio of the image */
+}
