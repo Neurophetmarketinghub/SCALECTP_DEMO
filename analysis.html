@@ -8,13 +8,14 @@
 	<title>Neurophet SCALE CTP</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&display=swap" />
 	<link href="assets\css\analysis\analysis.css" rel="stylesheet">
-	<link href="assets\css\analysis\global.css" rel="stylesheet"> 
+	<link href="assets\css\analysis\global.css" rel="stylesheet">
+	<link href="assets\css\analysis\global.css" rel="stylesheet">
 	<style>
 		.parent-wrapper-analysis {
 			height: 100vh;
 			/* 화면 전체 높이 사용 */
 			overflow: scroll;
-			/* 부모 요소에서 스크롤바 숨김 */
+
 			display: flex;
 			/* Flexbox 사용 */
 			flex-direction: column;
@@ -22,18 +23,6 @@
 			box-sizing: border-box;
 			/* 패딩과 테두리를 포함하여 높이 계산 */
 		}
-
-		.content {
-			flex: 1;
-			/* 남은 공간을 차지하도록 설정 */
-			overflow-y: auto;
-			/* 내용이 넘칠 때 수직 스크롤바 추가 */
-			padding: 10px;
-			/* 패딩 추가 */
-			box-sizing: border-box;
-			/* 패딩을 포함하여 너비 계산 */
-		}
-
 		/* accessbar 스타일 */
 		.accessbar- {
 			width: 100%;
@@ -57,6 +46,7 @@
 
 		.div11 {
 			scale: 0.85;
+			width:max-content;
 			height: 1px;
 		}
 
@@ -67,6 +57,7 @@
 				/* 시작 시 아이콘은 약간 투명함 */
 				transform: scale(1.3);
 				/* 크기 유지 */
+				background-color: blueviolet; opacity: 50%;
 			}
 
 			50% {
@@ -74,6 +65,8 @@
 				/* 중간 시 아이콘은 완전히 보임 */
 				transform: scale(1.5);
 				/* 살짝 확대하여 반짝이는 효과 추가 */
+				background-color: blueviolet; opacity: 50%;
+
 			}
 
 			100% {
@@ -81,6 +74,7 @@
 				/* 끝 시 아이콘은 다시 약간 투명함 */
 				transform: scale(1.3);
 				/* 크기 원래대로 */
+				background-color: blueviolet; opacity: 50%;
 			}
 		}
 
@@ -89,6 +83,34 @@
 			animation: smooth-sparkle 1.5s ease-in-out infinite;
 			/* 1.5초 주기로 부드럽게 반복 애니메이션 */
 		}
+		/* 기본 row 스타일 */
+.row {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+/* 마우스 오버 시 효과 */
+.row:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* 배경 색상 변경 (반투명 흰색) */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+/* 각 cell에 대한 기본 스타일 (선택 사항) */
+.cell, .cell1, .cell3, .cell7, .cell9, .cell13, .cell15 {
+    display: flex;
+    align-items: center;
+}
+
+/* 아이콘에 대한 기본 스타일 */
+.icon {
+    transition: transform 0.3s ease; /* 부드러운 변환 효과 */
+}
+
+/* 아이콘의 마우스 오버 효과 (선택 사항) */
+.row:hover .icon {
+}
+
 	</style>
 </head>
 <body>
@@ -113,7 +135,7 @@
 									<div class="id">
 										<div class="icon-search-parent">
 											<img class="icon-search" alt="" src="icon_Search.svg">
-											<div class="textarea">Patient ID or Patient Name</div>
+											<div class="textbox">Patient ID or Patient Name</div>
 										</div>
 									</div>
 									<div class="div5">
