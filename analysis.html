@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html class="theme-dark" lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="assets\css\icon\SCALE CTP_logo1.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <title>Neurophet SCALE CTP</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&display=swap" />
+	<link href="assets\css\analysis\analysis.css" rel="stylesheet">
+	<link href="assets\css\analysis\global.css" rel="stylesheet">
+<style>
+.parent-wrapper-analysis {
+    height: 100vh; /* 화면 전체 높이 사용 */
+    overflow: scroll; /* 부모 요소에서 스크롤바 숨김 */
+    display: flex; /* Flexbox 사용 */
+    flex-direction: column; /* 수직 방향으로 배치 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함하여 높이 계산 */
+} 
+.content {
+    flex: 1; /* 남은 공간을 차지하도록 설정 */
+    overflow-y: auto; /* 내용이 넘칠 때 수직 스크롤바 추가 */
+    padding: 10px; /* 패딩 추가 */
+    box-sizing: border-box; /* 패딩을 포함하여 너비 계산 */
+}
+/* accessbar 스타일 */
+.accessbar- {
+    width: 100%; /* 부모 요소의 너비를 차지하도록 설정 */ 	
+    /* 추가 스타일 */
+}
+
+/* container 스타일 */
+.container {
+    width: 100%; /* accessbar와 같은 너비를 차지하도록 설정 */
+    /* 추가 스타일 */
+}
+
+/* div1과 container1의 스타일 */
+.div1, .container1 {
+    width: 100%; /* 부모 요소의 너비를 차지하도록 설정 */ 
+}
+
+
+.div11 { 
+ scale: 0.85;
+ height: 1px;
+}
+
+
+</style>
+</head>
+<body> 
+	<div class="parent-wrapper-analysis">
+		<div class="header">
+
+			
+		</div>
+		 
+		<div class="div">
+    		<div class="container"> 
+      			<div class="div1">
+        				<b class="analysis">Analysis</b>
+      			</div>
+      			<div class="container1">
+        				<div class="divider">
+        				</div>
+        				<div class="parent">
+          					<div class="div2">
+            						<div class="div3">
+              							<div class="group">
+                								<div class="div4">
+                  									<b class="analysis">Upload DICOM Image</b>
+                								</div>
+                								<div class="divider1">
+                								</div>
+                								<div class="id">
+                  									<div class="icon-search-parent">
+                    										<img class="icon-search" alt="" src="icon_Search.svg">
+                    										
+                    										<div class="textbox">Patient ID or Patient Name</div>
+                  									</div>
+                								</div>
+                								<div class="div5">
+                  									<div class="label-parent">
+                    										<div class="analysis">Analysis Status</div>
+                    										<div class="multiselectioncombobox-wrapper">
+                      											<div class="textbox">All</div>
+                    										</div>
+                  									</div>
+                  									<img class="icon-search" alt="" src="icon_DirectionFaceDown.svg">
+                  									
+                								</div>
+                								<div class="div6">
+                  									<b class="analysis">Search</b>
+                								</div>
+                								<div class="div7">
+                  									<b class="analysis">Reset</b>
+                								</div>
+              							</div>
+              							<div class="display-items-0-wrapper">
+                								<div class="in-queue">Display Items: 1</div>
+              							</div>
+            						</div>
+            						<div class="div8">
+										<div class="columnheader">
+											  <div class="columnheader1">
+													<div class="columnheader-wrapper">
+														  <b class="textbox">St..</b>
+													</div>
+													<div class="divider2">
+													</div>
+											  </div>
+											  <div class="columnheader3">
+													<div class="columnheader-wrapper">
+														  <b class="textbox">An...</b>
+													</div>
+													<div class="divider2">
+													</div>
+											  </div>
+											  <div class="columnheader5">
+													<div class="columnheader-wrapper">
+														  <b class="textbox">Patient ID</b>
+													</div>
+													<div class="divider2">
+													</div>
+											  </div>
+											  <div class="columnheader5">
+													<div class="columnheader-wrapper">
+														  <b class="textbox">Patient Name</b>
+													</div>
+													<div class="divider2">
+													</div>
+											  </div>
+											  <div class="columnheader9">
+													<div class="columnheader-wrapper">
+														  <b class="textbox">Sex (Age)</b>
+													</div>
+													<div class="divider2">
+													</div>
+											  </div>
+											  <div class="columnheader11">
+													<div class="columnheader-wrapper">
+														  <b class="textbox">Image Type</b>
+													</div>
+													<div class="divider2">
+													</div>
+											  </div>
+											  <div class="columnheader11">
+													<div class="columnheader-wrapper">
+														  <b class="textbox">Analysis Requested</b>
+													</div>
+													<div class="divider2">
+													</div>
+											  </div>
+											  <div class="columnheader15">
+													<div class="columnheader-wrapper">
+														  <b class="textbox">Sou...</b>
+													</div>
+													<div class="divider2">
+													</div>
+											  </div>
+											  <div class="columnheader17">
+													<div class="columnheader-wrapper">
+														  <b class="textbox">Action</b>
+													</div>
+											  </div>
+										</div>
+										
+										<div class="divider">
+										</div>
+
+										<div class="row">
+											  <div class="row1">
+													<div class="cell">
+														  <div class="cell-child">
+														  </div>
+													</div>
+													<div class="cell1">
+														  <div class="textbox">1</div>
+													</div>
+													<div class="cell3">
+														  <div class="textbox">12345678901234567890</div>
+													</div>
+													<div class="cell3">
+														  <div class="textbox">Jungsuk Park</div>
+													</div>
+													<div class="cell7">
+														  <div class="textbox">Female (65)</div>
+													</div>
+													<div class="cell9">
+														  <div class="textbox">CT Perfusion</div>
+													</div>
+													<div class="cell9">
+														  <div class="textbox">2024-08-06 10:56</div>
+													</div>
+													<div class="cell13">
+														  <div class="textbox">Auto</div>
+													</div>
+													<div class="cell15">
+														  <img class="icon" alt="" src="assets\css\icon\action1.svg">
+													</div>
+											  </div>
+											  <div class="divider">
+											  </div>
+										</div>
+									</div>
+            						<div class="pagination">
+              							<div class="pagination1">
+                								<div class="pagination-item">
+                  									<img class="icon-search" alt="" src="icon_DirectionLineLeft.svg">
+                  									
+                								</div>
+                								<div class="pagination-item1">
+                  									<div class="analysis">1</div>
+                								</div>
+                								<div class="pagination-item">
+                  									<img class="icon-search" alt="" src="icon_DirectionLineRight.svg">
+                  									
+                								</div>
+              							</div>
+              							<div class="div10">
+                								<div class="textbox">20/page</div>
+                								<img class="icon-search" alt="" src="icon_DirectionFaceDown.svg">
+                								
+              							</div>
+              							<div class="frame-parent">
+                								<div class="ellipse-parent">
+                  									<div class="frame-child">
+                  									</div>
+                  									<div class="in-queue">In Queue</div>
+                								</div>
+                								<div class="ellipse-group">
+                  									<div class="frame-item">
+                  									</div>
+                  									<div class="in-queue">In Progress</div>
+                								</div>
+                								<div class="ellipse-group">
+                  									<div class="cell-child">
+                  									</div>
+                  									<div class="in-queue">Completed</div>
+                								</div>
+                								<div class="ellipse-parent">
+                  									<div class="ellipse-div">
+                  									</div>
+                  									<div class="in-queue">Failed</div>
+                								</div>
+                								<div class="ellipse-parent">
+                  									<div class="frame-child1">
+                  									</div>
+                  									<div class="in-queue">Canceled</div>
+                								</div>
+              							</div>
+            						</div>
+							</div>
+          					<div class="div11">
+            						<div class="divider15">
+            						</div>
+            						<div class="container2">
+              							<div class="div12">
+											<div class="header">
+												<b class="id1">12345678901234567890</b>
+												<img class="icon" alt="" src="assets\css\icon\action1.svg">                  									
+											</div>
+											<div class="header1">
+												<b class="id1">Jungsuk Park</b>
+												<b class="div14" style="font-weight: 100;">Female / 1900-00-00 (65)</b>
+											</div> 
+              							</div>
+              							<div class="divider">
+              							</div>
+              							<div class="div15">
+                								<div class="analysis-information-parent">
+                  									<b class="analysis-information">Analysis Information</b>
+                  									<div class="mismatch-ratio">
+                    										<div class="analysis-id">Analysis ID</div>
+                    										<div class="ct-perfusion">8</div>
+                  									</div>
+                  									<div class="mismatch-ratio">
+                    										<div class="analysis-id">Image Type</div>
+                    										<div class="ct-perfusion">CT Perfusion</div>
+                  									</div>
+                  									<div class="mismatch-ratio">
+                    										<div class="analysis-id">Analysis Requested</div>
+                    										<div class="ct-perfusion">2024-05-07 12:00</div>
+                  									</div>
+                  									<div class="mismatch-ratio">
+                    										<div class="analysis-id">Analysis Started</div>
+                    										<div class="ct-perfusion">2024-05-07 12:05</div>
+                  									</div>
+                  									<div class="mismatch-ratio">
+                    										<div class="analysis-id">Analysis Completed</div>
+                    										<div class="ct-perfusion">2024-05-07 12:20</div>
+                  									</div>
+                								</div>
+                								<div class="divider">
+                								</div>
+                								<div class="analysis-information-parent">
+                  									<b class="analysis-information">Summary Result</b>
+                  									<div class="cbf-volume">
+                    										<div class="analysis-id">Mismatch Volume</div>
+                    										<div class="ct-perfusion">63 mL</div>
+                  									</div>
+                  									<div class="cbf-volume">
+                    										<div class="analysis-id">Mismatch Ratio</div>
+                    										<div class="ct-perfusion">2.3</div>
+                  									</div>
+                  									<div class="cbf-volume">
+                    										<div class="analysis-id">CBF &lt;30% Volume</div>
+                    										<div class="ct-perfusion">49 mL</div>
+                  									</div>
+                  									<div class="cbf-volume">
+                    										<div class="analysis-id">Tmax &gt;6s Volume</div>
+                    										<div class="ct-perfusion">112 mL</div>
+                  									</div>
+                								</div>
+                								<div class="divider">
+                								</div>
+                								<div class="analysis-information-parent">
+                  									<b class="analysis-information">Image Information</b>
+                  									<div class="mismatch-ratio">
+                    										<div class="analysis-id">Modality</div>
+                    										<div class="ct-perfusion">CT</div>
+                  									</div>
+                  									<div class="mismatch-ratio">
+                    										<div class="analysis-id">Scan Date (Age)</div>
+                    										<div class="ct-perfusion">2024-07-10 (65)</div>
+                  									</div>
+                  									<div class="mismatch-ratio">
+                    										<div class="analysis-id">Study Description</div>
+                    										<div class="ct-perfusion">perfusion</div>
+                  									</div>
+                  									<div class="mismatch-ratio">
+                    										<div class="analysis-id">Series Description</div>
+                    										<div class="ct-perfusion">perfusion</div>
+                  									</div>
+                  									<div class="mismatch-ratio">
+                    										<div class="analysis-id">Source of Image</div>
+                    										<div class="ct-perfusion">Auto</div>
+                  									</div>
+                								</div>
+              							</div>
+            						</div>
+          					</div>
+        				</div>
+						
+      			</div>
+				
+    		</div>
+			
+			<div class="accessbar-">
+				<div class="product-logo-parent">
+					  <div class="product-logo">
+						  <img class="img-logocolor-icon" alt="" src="assets\css\icon\Demo01_logo1.svg">
+						  <img class="product-logo-child" alt="" src="assets\css\icon\Demo01_logo2.svg">          					
+					  </div>
+					  <div class="frame-wrapper">
+							<div class="accessbar-item-parent">
+								  <div class="accessbar-item">
+										<b class="analysis">Analysis</b>
+								  </div>
+								  <div class="accessbar-item2">
+										<div class="analysis">Transfer</div>
+								  </div>
+								  <div class="accessbar-item2">
+										<div class="analysis">Configuration</div>
+								  </div>
+							</div>
+					  </div>
+				</div>
+				<div class="iconbutton-parent">
+					  <div class="divider2">
+					  </div>
+					  <div class="accessbar-item6">
+							<div class="analysis">neurophet</div>
+							<img class="icon-directionfacedown2" alt="" src="assets\css\icon\Demo01_dropdown.svg">          					
+					  </div>
+				</div>
+		  </div>
+		  
+	  	</div> 
+	</div>
+</body>
+</html>
