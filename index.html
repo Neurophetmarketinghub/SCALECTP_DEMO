@@ -1,68 +1,89 @@
+<!DOCTYPE html>
 <html class="theme-dark">
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="assets\css\icon\SCALE CTP_logo1.ico">
+<link rel="icon" href="assets/css/icon/SCALE CTP_logo1.ico">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Neurophet SCALE CTP</title>
-<link href="assets\css\main.css" rel="stylesheet">
-<link href="assets\css\login.css" rel="stylesheet">
-
+<link href="assets/css/main.css" rel="stylesheet">
+<link href="assets/css/login.css" rel="stylesheet">
 <style>
     @font-face {
       font-family: 'Didact Gothic';
-      src:
-          url(chrome-extension://ignghjdjmgleolgiaifohmdlnbjklkij/assets/fonts/didactgothic.woff2) format('woff2');
+      src: url(chrome-extension://ignghjdjmgleolgiaifohmdlnbjklkij/assets/fonts/didactgothic.woff2) format('woff2');
       font-weight: normal;
       font-style: normal;
-  }
+    }
 </style>
 </head>
 <body>
 <div id="root">
-	<div class="aq-login-page">
-		<div class="aq-login-wrap">
-			<div class="aq-login-p">
-			</div>
-			<div class="aq-login-form-wrap">
-				<div class="aq-login-form">
-					<div class="aq-login-form-logo">
-						<img src="assets\css\logo.svg" alt="login logo" style="scale: 2.0;">
-					</div>
-					<div class="aq-login-form-group">
-						<form action="demo01.html">
-							<div class="aq-login-input-group">
-								<div class="aq-textfield ">
-									<div class="ns-textfield-wrap ns-textfield-medium">
-										<input id="aq-login-textfield-id" name="aq-login-textfield-id" type="text" class="ns-textfield undefined ns-textfield-start-icon" placeholder="ID" autocomplete="off" value="" style="padding-right: 11px;"><span class="ns-textfield-icon-wrap start"><svg width="16" height="16" viewbox="0 0 32 32" fill="none" svgdata="[object Object]" class="ns-icon" ns-icon-type="user"><path d="M11.7454 17.7761C7.21811 19.4932 4 23.8708 4 29H6C6 23.4772 10.4772 19 16 19C21.5228 19 26 23.4772 26 29H28C28 23.8708 24.7819 19.4932 20.2546 17.7761C22.5047 16.3603 24 13.8548 24 11C24 6.58172 20.4183 3 16 3C11.5817 3 8 6.58172 8 11C8 13.8548 9.4953 16.3603 11.7454 17.7761ZM16 17C19.3137 17 22 14.3137 22 11C22 7.68629 19.3137 5 16 5C12.6863 5 10 7.68629 10 11C10 14.3137 12.6863 17 16 17Z" fill="white" fill-rule="evenodd" clip-rule="evenodd"></path></svg></span>
-									</div>
-								</div>
-							</div>
-							<div class="aq-login-input-group">
-								<div class="aq-textfield ">
-									<div class="ns-textfield-wrap ns-textfield-medium">
-										<input id="aq-login-textfield-password" name="aq-login-textfield-password" type="password" class="ns-textfield undefined ns-textfield-start-icon" placeholder="Password" autocomplete="off" value="" style="padding-right: 11px;"><span class="ns-textfield-icon-wrap start"><img src="assets\css\icon\icon.svg" class="aq-icon-pass" alt=""></span>
-									</div>
-								</div>
-							</div>
-							<div class="aq-login-button-group">
-								<button type="submit" class="ns-button ns-button-primary ns-button-large " id="aq-login-button-login">Log In</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="aq-login-p">
-			</div>
-			<div class="aq-login-bottom">
-				<span>ⓒ 2024&nbsp;<a href="https://www.neurophet.com/" rel="noopener noreferrer" target="_blank">NEUROPHET, Inc.</a>&nbsp;All rights are reserved.</span>
-			</div>
-		</div>
-	</div>
+    <div class="aq-login-page">
+        <div class="aq-login-wrap">
+            <div class="aq-login-p"></div>
+            <div class="aq-login-form-wrap">
+                <div class="aq-login-form">
+                    <div class="aq-login-form-logo">
+                        <img src="assets/css/logo.svg" alt="login logo" style="scale: 2.0;">
+                    </div>
+                    <div class="aq-login-form-group">
+                        <form id="loginForm">
+                            <div class="aq-login-input-group">
+                                <div class="aq-textfield">
+                                    <div class="ns-textfield-wrap ns-textfield-medium">
+                                        <input id="aq-login-textfield-id" name="aq-login-textfield-id" type="text" class="ns-textfield undefined ns-textfield-start-icon" placeholder="ID" autocomplete="off" value="" style="padding-right: 11px;">
+                                        <span class="ns-textfield-icon-wrap start">
+                                            <svg width="16" height="16" viewBox="0 0 32 32" fill="none" class="ns-icon" ns-icon-type="user">
+                                                <path d="M11.7454 17.7761C7.21811 19.4932 4 23.8708 4 29H6C6 23.4772 10.4772 19 16 19C21.5228 19 26 23.4772 26 29H28C28 23.8708 24.7819 19.4932 20.2546 17.7761C22.5047 16.3603 24 13.8548 24 11C24 6.58172 20.4183 3 16 3C11.5817 3 8 6.58172 8 11C8 13.8548 9.4953 16.3603 11.7454 17.7761ZM16 17C19.3137 17 22 14.3137 22 11C22 7.68629 19.3137 5 16 5C12.6863 5 10 7.68629 10 11C10 14.3137 12.6863 17 16 17Z" fill="white"></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aq-login-input-group">
+                                <div class="aq-textfield">
+                                    <div class="ns-textfield-wrap ns-textfield-medium">
+                                        <input id="aq-login-textfield-password" name="aq-login-textfield-password" type="password" class="ns-textfield undefined ns-textfield-start-icon" placeholder="Password" autocomplete="off" value="" style="padding-right: 11px;">
+                                        <span class="ns-textfield-icon-wrap start">
+                                            <img src="assets/css/icon/icon.svg" class="aq-icon-pass" alt="">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aq-login-button-group">
+                                <button type="submit" class="ns-button ns-button-primary ns-button-large" id="aq-login-button-login">Log In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="aq-login-p"></div>
+            <div class="aq-login-bottom">
+                <span>ⓒ 2024&nbsp;<a href="https://www.neurophet.com/" rel="noopener noreferrer" target="_blank">NEUROPHET, Inc.</a>&nbsp;All rights are reserved.</span>
+            </div>
+        </div>
+    </div>
 </div>
-<div style="all: initial !important">
-</div>
-<div>
-</div>
+<div style="all: initial !important"></div>
+<div></div>
 <deepl-input-controller></deepl-input-controller>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+
+        // Get the values from the input fields
+        var id = document.getElementById('aq-login-textfield-id').value;
+        var password = document.getElementById('aq-login-textfield-password').value;
+
+        // Check if the ID and password match the required values
+        if (id === 'ksin' && password === 'ksin') {
+            // Redirect to a different page on successful login
+            window.location.href = 'demo01.html';
+        } else {
+            alert('Invalid ID or Password'); // Show an error message
+        }
+    });
+</script>
 </body>
 </html>
