@@ -1,0 +1,233 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+
+:root {
+    
+    /* fonts */
+    --font-noto-sans: 'Noto Sans';
+    
+    /* font sizes */
+    --font-size-sm: 14px;
+    --font-size-xs: 12px;
+    --font-size-base: 16px;
+    
+    /* Colors */
+    --sys-color-background-overlay: #282828;
+    --comp-color-inputfield-basic-background-normal: #1e1e1e;
+    --sys-color-background-base: #0a0a0a;
+    --comp-color-button-secondary-background-normal: rgba(255, 255, 255, 0.4);
+    --comp-color-inputfield-basic-border-normal: rgba(255, 255, 255, 0.3);
+    --comp-color-text-secondary-foreground-normal: rgba(255, 255, 255, 0.9);
+    --comp-color-text-tertiary-foreground-normal: rgba(255, 255, 255, 0.6);
+    --comp-color-paginationitem-basic-background-selected: rgba(255, 255, 255, 0.1);
+    --comp-color-divider-basic-background-default: rgba(255, 255, 255, 0.2);
+    --comp-color-accessbaritem-basic-background-normal: rgba(0, 0, 0, 0);
+    --comp-color-accessbar-basic-background-normal: #383838;
+    --comp-white-foreground-normal: #fff;
+    --sys-color-ui-base2: #aeaeae;
+    --sys-color-functional-error: #ff453a;
+    --sys-color-functional-confirm: #27d36f;
+    --sys-color-functional-info: #00a3ff;
+    --sys-color-ui-base3: #5a5a5a;
+    --comp-color-button-primary-background-normal: #0277fe;
+    
+    /* Spacing */
+    --comp-radius-paginationitem: 2px;
+    --comp-radius-datagrid: 3px;
+    
+    /* Gaps */
+    --gap-base: 16px;
+    --gap-9xs: 4px;
+    --gap-5xs: 8px;
+    --gap-7xs: 6px;
+    --gap-xs: 12px;
+    
+    /* Paddings */
+    --padding-9xs: 4px;
+    --padding-xs: 12px;
+    --padding-base: 16px;
+    --padding-5xl: 24px;
+    --padding-5xs: 8px;
+    --padding-7xs: 6px;
+    --padding-3xs: 10px;
+    
+    /* Border radiuses */
+    --br-11xs: 2px;
+    --br-10xs: 3px;
+    
+    /* Effects */
+    --sys-shadow-raised: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+  /* General list item styles */
+.listbox a {
+    text-decoration: none; /* Remove default underline from links */
+    color: rgba(255, 255, 255, 0.9); /* Text color */
+    display: block; /* Ensure the link takes up the full width of the parent */
+}
+
+.listbox a .list-item {
+    align-self: stretch;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    min-height: 36px;
+    background-color: rgba(0, 0, 0, 0); /* Default transparent background */
+}
+
+/* Styles for selected list item */
+.listbox a.selected .list-item {
+    width: 100%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1); 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    min-height: 36px;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Spoqa Han Sans Neo';
+    }
+
+/* Styles for hovered list item */
+.listbox a:hover .list-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for selected */
+}
+
+
+.parent {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1px;
+    font-size: 14px;
+    color: #fff;
+}
+.container1 {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: rgba(255, 255, 255, 0.9);
+}   
+.img-logocolor-icon {
+    width: 120px;
+    position: relative;
+    height: 30px;
+}
+.product-logo-child {
+    width: 105px;
+    position: relative;
+    height: 28px;
+}
+.product-logo {
+    width: 229px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+} 
+.accessbar-item-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.frame-wrapper {
+    flex: 1;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.product-logo-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.divider2 {
+    width: 1px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 16px;
+}
+.accessbar-item6 {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    gap: 10px;
+    min-height: 48px;
+}
+.iconbutton-parent {
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+}
+.accessbar- {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    background-color: #383838;
+    width: 1920px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.nav-link {
+    color: rgba(var(--BaseWhiteRGB), var(--Opacity3));
+    a {
+      display: inline-block;   
+      font: var(--Font-Scale-Body2);
+      color: rgba(var(--BaseWhiteRGB), var(--Opacity3));
+      text-align: center;
+
+      &:hover {
+        background-color: rgba(var(--BaseWhiteRGB), var(--Opacity8));
+      }
+
+      &:before {
+        display: block;
+        content: attr(title);
+        font-weight: 700;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+      }
+    }
