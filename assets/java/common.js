@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Select all list items
     const listItems = document.querySelectorAll('.listbox a');
-    
+
     // Get the current URL path
     const currentPath = window.location.pathname;
 
@@ -16,8 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Get the href attribute of the current list item
         const href = item.getAttribute('href');
 
+        // Ensure href is absolute for comparison
+        const linkPath = new URL(href, window.location.origin).pathname;
+
         // Check if the href matches the current URL path
-        if (currentPath.endsWith(href)) {
+        if (currentPath === linkPath) {
             item.classList.add('selected'); // Add the 'selected' class
         }
 
@@ -28,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             deselectAllItems(); // Deselect all items
             item.classList.add('selected'); // Add 'selected' to the clicked item
 
-            // Optional: Navigate to the clicked link
+            // Navigate to the clicked link
             window.location.href = href;
         });
     });

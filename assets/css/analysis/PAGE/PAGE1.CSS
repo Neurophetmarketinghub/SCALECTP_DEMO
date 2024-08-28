@@ -382,11 +382,7 @@
     justify-content: flex-start;
     gap: var(--gap-12xs);
 }
-.listbox {
-    text-decoration: none; /* Remove default underline from links */
-    color: rgba(255, 255, 255, 0.9); /* Text color */
-    display: block; /* Ensure the link takes up the full width of the parent */
-}
+/* 기본 리스트 아이템 스타일 */
 .listbox .list-item {
     width: 100%;
     position: relative;
@@ -402,19 +398,21 @@
     color: rgba(255, 255, 255, 0.9);
     font-family: 'Spoqa Han Sans Neo';
     padding: 8px 12px;
-
-}
-.listbox :hover .list-item {
-background-color: rgba(255, 255, 255, 0.1); /* Light background for selected */
-}
- 
-.listbox .list-item:hover,
-.listbox .list-item:active,
-.listbox .list-item:focus {
-    background-color: rgba(255, 255, 255, 0.1); /* 선택된 링크의 배경색 */
 }
 
-   
+/* 호버, 활성화 상태 스타일 */
+.listbox .listitem:hover .list-item,
+.listbox .listitem:active .list-item,
+.listbox .listitem:focus .list-item {
+    background-color: rgba(255, 255, 255, 0.1); /* 호버, 활성화, 포커스 상태에서의 배경색 */
+}
+
+/* 선택된 항목 스타일 */
+.listbox .listitem.selected .list-item {
+    background-color: rgba(255, 255, 255, 0.1); /* 호버, 활성화, 포커스 상태에서의 배경색 */
+}
+
+/* 리스트 박스 래퍼 스타일 */
 .listbox-wrapper {
     align-self: stretch;
     width: 230px;
@@ -427,6 +425,7 @@ background-color: rgba(255, 255, 255, 0.1); /* Light background for selected */
     box-sizing: border-box;
     color: var(--comp-color-text-secondary-foreground-normal);
 }
+
 .parent {
     align-self: stretch;
     flex: 1;
