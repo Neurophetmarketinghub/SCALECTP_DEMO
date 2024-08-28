@@ -382,56 +382,39 @@
     justify-content: flex-start;
     gap: var(--gap-12xs);
 }
-.list-item {
-    flex: 1;
-    position: relative;
-}
-.listitem {
-    align-self: stretch;
-    background-color: var(--comp-color-listitem-basic-background-selected);
-    height: 36px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: var(--padding-5xs) var(--padding-xs);
-    box-sizing: border-box;
-    min-height: 36px;
-}
-.listitem1 {
-    align-self: stretch;
-    background-color: var(--comp-color-accessbaritem-basic-background-normal);
-    height: 36px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: var(--padding-5xs) var(--padding-xs);
-    box-sizing: border-box;
-    min-height: 36px;
-}
-.listitem6 {
-    align-self: stretch;
-    background-color: var(--comp-color-accessbaritem-basic-background-normal);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: var(--padding-5xs) var(--padding-xs);
-    box-sizing: border-box;
-    min-height: 36px;
-}
 .listbox {
-    flex: 1;
-    border-radius: var(--comp-radius-list);
-    background-color: var(--comp-color-accessbaritem-basic-background-normal);
-    border: 1px solid var(--comp-color-accessbaritem-basic-background-normal);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: var(--padding-7xs) 0px;
+    text-decoration: none; /* Remove default underline from links */
+    color: rgba(255, 255, 255, 0.9); /* Text color */
+    display: block; /* Ensure the link takes up the full width of the parent */
 }
+.listbox .list-item {
+    width: 100%;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    min-height: 36px;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Spoqa Han Sans Neo';
+    padding: 8px 12px;
+
+}
+.listbox :hover .list-item {
+background-color: rgba(255, 255, 255, 0.1); /* Light background for selected */
+}
+ 
+.listbox .list-item:hover,
+.listbox .list-item:active,
+.listbox .list-item:focus {
+    background-color: rgba(255, 255, 255, 0.1); /* 선택된 링크의 배경색 */
+}
+
+   
 .listbox-wrapper {
     align-self: stretch;
     width: 230px;
@@ -554,6 +537,7 @@
 }
 .accessbar- {
     position: absolute;
+    width: 100%;
     top: 0px;
     left: 0px;
     box-shadow: var(--sys-shadow-raised);

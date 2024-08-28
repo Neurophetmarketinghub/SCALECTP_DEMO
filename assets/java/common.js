@@ -1,10 +1,16 @@
- 
 document.addEventListener('DOMContentLoaded', () => {
     // Select all list items
     const listItems = document.querySelectorAll('.listbox a');
     
     // Get the current URL path
     const currentPath = window.location.pathname;
+
+    // Function to remove 'selected' class from all items
+    const deselectAllItems = () => {
+        listItems.forEach(item => {
+            item.classList.remove('selected');
+        });
+    };
 
     listItems.forEach(item => {
         // Get the href attribute of the current list item
@@ -15,10 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.add('selected'); // Add the 'selected' class
         }
 
-        // Optional: Add click event to highlight the selected item
-        item.addEventListener('click', () => {
-            listItems.forEach(el => el.classList.remove('selected')); // Remove 'selected' from all items
+        // Add click event to highlight the selected item
+        item.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent the default action of the link
+
+            deselectAllItems(); // Deselect all items
             item.classList.add('selected'); // Add 'selected' to the clicked item
+
+            // Optional: Navigate to the clicked link
+            window.location.href = href;
         });
     });
-}); 
+});
