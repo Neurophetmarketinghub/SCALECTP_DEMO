@@ -1245,64 +1245,7 @@ html:root.theme-dark,html:root.theme-light {
     width: 584px
 }
 
-.aq-temp-public {
-    display: flex;
-    flex-direction: column;
-    height: 100%
-}
-
-.aq-temp-public .aq-content {
-    flex: 1 1;
-    overflow: hidden;
-    position: relative
-}
-
-.aq-temp-public .aq-pubic-toastmessages {
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0
-}
-
-.aq-temp-viewer {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%
-}
-
-.aq-temp-viewer .aq-content {
-    flex: 1 1;
-    overflow: hidden
-}
-
-@font-face {
-    font-family: Spoqa Han Sans Neo;
-    font-weight: 700;
-    src: local("Spoqa Han Sans Neo Bold"),url(/static/media/SpoqaHanSansNeo-Bold.302cca049a794dc06645.ttf) format("truetype"),url(/static/media/SpoqaHanSansNeo-Bold.1db18034ccc384032a4a.woff2) format("woff2"),url(/static/media/SpoqaHanSansNeo-Bold.dc75532918fd412e27a3.woff) format("woff")
-}
-
-@font-face {
-    font-family: Spoqa Han Sans Neo;
-    font-weight: 500;
-    src: local("Spoqa Han Sans Neo Medium"),url(/static/media/SpoqaHanSansNeo-Medium.a870c85269daef382037.ttf) format("truetype"),url(/static/media/SpoqaHanSansNeo-Medium.8589927a4fa35d637a8d.woff2) format("woff2"),url(/static/media/SpoqaHanSansNeo-Medium.823120084c9ac260b260.woff) format("woff")
-}
-
-@font-face {
-    font-family: Spoqa Han Sans Neo;
-    font-weight: 400;
-    src: local("Spoqa Han Sans Neo Regular"),url(/static/media/SpoqaHanSansNeo-Regular.95ececb5af85b0f66467.ttf) format("truetype"),url(/static/media/SpoqaHanSansNeo-Regular.452bf1579d6a73fbaffc.woff2) format("woff2"),url(/static/media/SpoqaHanSansNeo-Regular.4af655e2b88a518cc85c.woff) format("woff")
-}
-
-@font-face {
-    font-family: Spoqa Han Sans Neo;
-    font-weight: 300;
-    src: local("Spoqa Han Sans Neo Light"),url(/static/media/SpoqaHanSansNeo-Light.71d8174224ae0bcbefb2.ttf) format("truetype"),url(/static/media/SpoqaHanSansNeo-Light.13ba65ce1663198528ba.woff2) format("woff2"),url(/static/media/SpoqaHanSansNeo-Light.1cb73b3acae88adbdd59.woff) format("woff")
-}
-
+ 
 html:root {
     --Font-Weight-Light: 300;
     --Font-Weight-Default: 400;
@@ -25067,8 +25010,7 @@ sup {
 .listbox a.selected .list-item {
     width: 100%;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.1);
-    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1); 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25212,3 +25154,26 @@ sup {
     font-size: 14px;
     color: #fff;
 }
+
+
+.nav-link {
+    color: rgba(var(--BaseWhiteRGB), var(--Opacity3));
+    a {
+      display: inline-block;   
+      font: var(--Font-Scale-Body2);
+      color: rgba(var(--BaseWhiteRGB), var(--Opacity3));
+      text-align: center;
+
+      &:hover {
+        background-color: rgba(var(--BaseWhiteRGB), var(--Opacity8));
+      }
+
+      &:before {
+        display: block;
+        content: attr(title);
+        font-weight: 700;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+      }
+    }
