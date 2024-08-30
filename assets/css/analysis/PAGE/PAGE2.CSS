@@ -451,56 +451,37 @@
     justify-content: flex-start;
     gap: var(--gap-12xs);
 }
-.list-item {
-    flex: 1;
+/* 기본 리스트 아이템 스타일 */
+.listbox .list-item {
+    width: 100%;
     position: relative;
-}
-.listitem {
-    align-self: stretch;
-    background-color: var(--comp-color-accessbaritem-basic-background-normal);
-    height: 36px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: var(--padding-5xs) var(--padding-xs);
-    box-sizing: border-box;
-    min-height: 36px;
-}
-.listitem1 {
-    align-self: stretch;
-    background-color: var(--comp-color-listitem-basic-background-selected);
-    height: 36px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: var(--padding-5xs) var(--padding-xs);
-    box-sizing: border-box;
-    min-height: 36px;
-}
-.listitem6 {
-    align-self: stretch;
-    background-color: var(--comp-color-accessbaritem-basic-background-normal);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: var(--padding-5xs) var(--padding-xs);
-    box-sizing: border-box;
-    min-height: 36px;
-}
-.listbox {
     flex: 1;
-    border-radius: var(--comp-radius-list);
-    background-color: var(--comp-color-accessbaritem-basic-background-normal);
-    border: 1px solid var(--comp-color-accessbaritem-basic-background-normal);
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     justify-content: flex-start;
-    padding: var(--padding-7xs) 0px;
+    box-sizing: border-box;
+    min-height: 36px;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Spoqa Han Sans Neo';
+    padding: 8px 12px;
 }
+
+/* 호버, 활성화 상태 스타일 */
+.listbox .listitem:hover .list-item,
+.listbox .listitem:active .list-item,
+.listbox .listitem:focus .list-item {
+    background-color: rgba(255, 255, 255, 0.1); /* 호버, 활성화, 포커스 상태에서의 배경색 */
+}
+
+/* 선택된 항목 스타일 */
+.listbox .listitem.selected .list-item {
+    background-color: rgba(255, 255, 255, 0.1); /* 호버, 활성화, 포커스 상태에서의 배경색 */
+}
+
+/* 리스트 박스 래퍼 스타일 */
 .listbox-wrapper {
     align-self: stretch;
     width: 230px;
@@ -513,6 +494,7 @@
     box-sizing: border-box;
     color: var(--comp-color-text-secondary-foreground-normal);
 }
+
 .parent {
     align-self: stretch;
     flex: 1;
@@ -623,6 +605,7 @@
 }
 .accessbar- {
     position: absolute;
+    width: 100%;
     top: 0px;
     left: 0px;
     box-shadow: var(--sys-shadow-raised);
@@ -637,7 +620,7 @@
     font-size: var(--sys-typography-style-body3-size);
     color: var(--comp-white-foreground-normal);
 }
-.case-1133-2-tmax-threshold {
+.case-1133-1-mismatch {
     width: 100%;
     position: relative;
     background-color: var(--sys-color-background-base);
@@ -647,65 +630,4 @@
     font-size: var(--sys-typography-style-header4-size);
     color: var(--comp-color-text-tertiary-foreground-normal);
     font-family: var(--sys-typography-style-body3);
-}
-
-
-body {
-    margin: 0;
-    line-height: normal;
-}
-
-
-:root {
-    
-    /* fonts */
-    --sys-typography-style-body3: 'Spoqa Han Sans Neo';
-    
-    /* font sizes */
-    --sys-typography-style-body3-size: 14px;
-    --sys-typography-style-title1-size: 18px;
-    --font-size-3xl: 22px;
-    --font-size-7xl: 26px;
-    --sys-typography-style-header4-size: 12px;
-    
-    /* Colors */
-    --sys-color-background-overlay: #282828;
-    --sys-color-background-base: #0a0a0a;
-    --comp-color-button-secondary-background-normal: rgba(255, 255, 255, 0.4);
-    --comp-color-text-tertiary-foreground-normal: rgba(255, 255, 255, 0.6);
-    --comp-color-listitem-basic-background-selected: rgba(255, 255, 255, 0.1);
-    --comp-color-text-secondary-foreground-normal: rgba(255, 255, 255, 0.9);
-    --comp-color-divider-basic-background-default: rgba(255, 255, 255, 0.2);
-    --comp-color-accessbaritem-basic-background-normal: rgba(0, 0, 0, 0);
-    --comp-color-accessbar-basic-background-normal: #383838;
-    --comp-white-foreground-normal: #fff;
-    --sys-color-background-black: #000;
-    --color-blue: #0000ff;
-    --color-lime: #00ff00;
-    --color-yellow: #ffff00;
-    --color-red: #ff0000;
-    
-    /* Spacing */
-    --comp-radius-list: 2px;
-    
-    /* Gaps */
-    --gap-base: 16px;
-    --gap-9xs: 4px;
-    --gap-12xs: 1px;
-    --gap-5xs: 8px;
-    --gap-7xs: 6px;
-    --gap-xs: 12px;
-    
-    /* Paddings */
-    --padding-9xs: 4px;
-    --padding-xs: 12px;
-    --padding-7xs: 6px;
-    --padding-5xs: 8px;
-    --padding-base: 16px;
-    
-    /* Border radiuses */
-    --br-10xs: 3px;
-    
-    /* Effects */
-    --sys-shadow-raised: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }

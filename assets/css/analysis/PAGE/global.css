@@ -2,8 +2,7 @@ body {
     margin: 0;
     line-height: normal;
 }
-
-
+ 
 :root {
     
     /* fonts */
@@ -27,6 +26,10 @@ body {
     --comp-color-accessbar-basic-background-normal: #383838;
     --comp-white-foreground-normal: #fff;
     --sys-color-background-black: #000;
+    --color-blue: #0000ff;
+    --color-lime: #00ff00;
+    --color-yellow: #ffff00;
+    --color-red: #ff0000;
     
     /* Spacing */
     --comp-radius-list: 2px;
