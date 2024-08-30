@@ -55,6 +55,9 @@
     box-sizing: border-box;
     gap: var(--gap-base);
 }
+.button1 {
+    position: relative;
+}
 .button {
     align-self: stretch;
     border-radius: var(--br-10xs);
@@ -176,138 +179,61 @@
     box-sizing: border-box;
     gap: 8px;
 }
-.case-1133-1-summary-icon {
-    position: absolute;
-    top: 48px;
-    left: 640px;
-    width: 600px;
-    height: 569.5px;
-    object-fit: cover;
-}
-.case-1133-1-summary-icon1 {
-    position: absolute;
-    top: 48px;
-    left: 32px;
-    width: 600px;
-    height: 569.5px;
-    object-fit: cover;
-}
-.frame-child {
-    width: 12px;
-    position: relative;
-    border-radius: 50%;
-    background-color: #00ff00;
-    height: 12px;
-}
-.tmax-6s-volume1 {
-    position: relative;
-    font-weight: 500;
-}
-.b {
-    position: relative;
-}
-.ml3 {
-    position: relative;
-    font-size: var(--font-size-3xl);
-    font-weight: 500;
-    color: var(--comp-color-text-tertiary-foreground-normal);
-}
-.group {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: flex-start;
-    gap: var(--gap-9xs);
-    font-size: var(--font-size-7xl);
-    color: var(--comp-white-foreground-normal);
-}
-.tmax-6s-volume-parent {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: flex-start;
-    gap: var(--gap-7xs);
-}
-.ellipse-parent {
-    position: absolute;
-    top: 642px;
-    left: 791px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-7xs);
-}
-.mismatch-volume-parent {
+.cumulative-maps-icon {
     position: absolute;
     top: 0px;
     left: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: flex-start;
-    gap: var(--gap-7xs);
-}
-.b2 {
-    position: relative;
-    font-size: var(--font-size-7xl);
-    color: var(--comp-white-foreground-normal);
-}
-.mismatch-ratio-parent {
-    position: absolute;
-    top: 37px;
-    left: 23px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-7xs);
-}
-.frame-parent {
-    position: absolute;
-    top: 685px;
-    left: 507px;
-    width: 266px;
-    height: 70px;
-}
-.icon {
-    position: absolute;
-    top: 740px;
-    left: 1131px;
-    width: 118.5px;
-    height: 30px;
+    width: 1009.4px;
+    height: 3533.8px;
     object-fit: cover;
 }
-.frame-item {
-    width: 12px;
-    position: relative;
-    border-radius: 50%;
-    background-color: #ff0000;
-    height: 12px;
+::-webkit-scrollbar {
+    display: none;
 }
-.ellipse-group {
+
+.frame-child {
     position: absolute;
-    top: 642px;
-    left: 189px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-7xs);
+    top: 26px;
+    left: 25px;
+    background-color: var(--sys-color-background-black);
+    width: 170px;
+    height: 34px;
 }
-.case-11331 {
-    width: 1280px;
+.cumulative-maps-parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1009px;
+    height: 808px;
+}
+.case-1133-columned-map-child {
+    position: absolute;
+    top: 0px;
+    left: 12.5px;
+    background-color: var(--sys-color-background-black);
+    width: 200.8px;
+    height: 36.7px;
+}
+.case-1133-columned-map {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 500px);
+    background-color: var(--comp-white-foreground-normal);
+    width: 1000px;
+    height: 3000px;
+    overflow: hidden;
+}
+.case-1133-columned-map-wrapper {
+    width: 1000px;
     position: absolute;
     margin: 0 !important;
-    top: 8px;
-    left: 56px;
-    background-color: var(--sys-color-background-black);
-    height: 800px;
-    overflow: hidden;
+    top: 0px;
+    left: 196px;
+    height: 814px;
+    overflow-y: auto;
+    overflow-x: hidden;
     flex-shrink: 0;
     z-index: 0;
-    font-size: var(--font-size-3xl);
-    color: var(--comp-color-text-tertiary-foreground-normal);
 }
 .top {
     align-self: stretch;
@@ -332,7 +258,7 @@
     justify-content: flex-start;
     gap: var(--gap-9xs);
 }
-.parent2 {
+.group {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -382,6 +308,7 @@
     justify-content: flex-start;
     gap: var(--gap-12xs);
 }
+
 /* 기본 리스트 아이템 스타일 */
 .listbox .list-item {
     width: 100%;
@@ -425,7 +352,6 @@
     box-sizing: border-box;
     color: var(--comp-color-text-secondary-foreground-normal);
 }
-
 .parent {
     align-self: stretch;
     flex: 1;
@@ -536,7 +462,6 @@
 }
 .accessbar- {
     position: absolute;
-    width: 100%;
     top: 0px;
     left: 0px;
     box-shadow: var(--sys-shadow-raised);
@@ -551,7 +476,7 @@
     font-size: var(--sys-typography-style-body3-size);
     color: var(--comp-white-foreground-normal);
 }
-.case-1133-1-mismatch {
+.case-1133-5-columned-map {
     width: 100%;
     position: relative;
     background-color: var(--sys-color-background-base);
@@ -577,15 +502,13 @@ body {
     
     /* font sizes */
     --sys-typography-style-body3-size: 14px;
-    --font-size-3xl: 22px;
-    --font-size-7xl: 26px;
     --sys-typography-style-header4-size: 12px;
     
     /* Colors */
     --sys-color-background-overlay: #282828;
     --sys-color-background-base: #0a0a0a;
-    --comp-color-button-secondary-background-normal: rgba(255, 255, 255, 0.4);
     --comp-color-text-tertiary-foreground-normal: rgba(255, 255, 255, 0.6);
+    --comp-color-button-secondary-background-normal: rgba(255, 255, 255, 0.4);
     --comp-color-listitem-basic-background-selected: rgba(255, 255, 255, 0.1);
     --comp-color-text-secondary-foreground-normal: rgba(255, 255, 255, 0.9);
     --comp-color-divider-basic-background-default: rgba(255, 255, 255, 0.2);
@@ -601,7 +524,6 @@ body {
     --gap-base: 16px;
     --gap-9xs: 4px;
     --gap-12xs: 1px;
-    --gap-7xs: 6px;
     --gap-xs: 12px;
     
     /* Paddings */
